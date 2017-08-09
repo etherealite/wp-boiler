@@ -1,0 +1,7 @@
+
+/web/app/plugins/wp-property/** -text
+/web/app/plugins/wp-property-agents/** -text
+/web/app/plugins/wp-property-supermap/** -text
+/web/app/plugins/wp-property-terms/** -text
+/web/app/plugins/wp-property-responsive-slideshow/** -text
+
