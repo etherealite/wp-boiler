@@ -41,9 +41,10 @@ services:
      build: ./docker/php-fpm
      volumes:
        - ./:/var/www/html
+       - ./docker/php-fpm/php.ini:/usr/local/etc/php/php.ini
      environment:
        # you can set this in the .env file. Example value: 
-       # XDEBUG_CONFIG='idekey=xxx remote_host=10.0.0.242 remote_port=9001'
+       # XDEBUG_CONFIG='idekey=xxx remote_host=10.0.0.242 remote_port=9000'
        XDEBUG_CONFIG: "${XDEBUG_CONFIG}"
    web:
      depends_on:
